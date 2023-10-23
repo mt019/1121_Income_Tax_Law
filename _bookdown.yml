@@ -7,6 +7,6 @@ language:
     tab: "表 "
   ui:
     edit: "編輯"
-    chapter_name: ["第 ", " 周"]
+    chapter_name: ["第 ", " 堂"]
 output_dir: "docs"
 # rmd_subdir: yes
