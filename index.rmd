@@ -1,0 +1,20 @@
+---
+title: "1121 所得稅法一"
+author: [柯格鐘]
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output: bookdown::gitbook
+link-citations: true
+description: "112-1 學期【所得稅法一】課堂筆記。采用R的bookdown制作，输出格式为bookdown::gitbook."
+---
+
+# Preface {-}
+
+所得稅法一
+
+
+112-1 學期《所得稅法一》課堂筆記。采用R的bookdown製作，輸出格式為bookdown::gitbook。
+
+
+
