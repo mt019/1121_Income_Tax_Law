@@ -156,7 +156,7 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 $if(numbersections)$
-\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
+% \setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
 $else$
 \setcounter{secnumdepth}{0}
 $endif$
@@ -225,22 +225,27 @@ $abstract$
 \end{abstract}
 $endif$
 
-$for(include-before)$
-$include-before$
+% $for(include-before)$
+% $include-before$
 
 $endfor$
+
+
 $if(toc)$
 {
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
 }
 $endif$
+
 $if(lot)$
 \listoftables
 $endif$
+
 $if(lof)$
 \listoffigures
 $endif$
+
 $body$
 
 $if(natbib)$
