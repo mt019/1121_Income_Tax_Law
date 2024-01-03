@@ -20,7 +20,8 @@
 name={第,堂},
 number=\arabic{chapter},
 },
-section/format += \songti
+section/format += \songti,
+subsection/format += \songti
 }
 
 
@@ -59,8 +60,41 @@ section/format += \songti
 }{}
 \makeatother
 
-\usepackage{makeidx}
-\makeindex
+% \usepackage{makeidx}
+% \makeindex
+\usepackage{imakeidx}
+
+% \newcommand{\gobblecomma}[1]{\@gobble{#1}\ignorespaces}
+
+\newcommand\gobbleone[1]{}
+\newcommand*{\seeonly}[2]{\ (\emph{\seename} #1)}
+% \newcommand*{\also}[2]{(\emph{\alsoname} #1)}
+% \newcommand{\Also}[2]{\emph{See also} #1}
+
+% \providecommand*\see[2]{\emph{\seename} #1}
+
+% \usepackage{seealso}
+
+
+% https://latex.org/forum/viewtopic.php?t=27503
+
+\renewcommand{\seename}{參見}
+\renewcommand{\alsoname}{又見}
+
+
+% https://zhuanlan.zhihu.com/p/572429923
+
+
+% \usepackage{hyperref}
+% \usepackage{classicthesis}
+% \usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,
+% listings]{classicthesis}
+\makeindex[intoc=true,
+columns=1,columnseprule=true,
+%  options=-s latex/indexstyles.ist
+]
+
+\usepackage{hyperref}
 
 \urlstyle{tt}
 
